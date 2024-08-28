@@ -31,18 +31,13 @@ img {
 }
 
 .card {
-        background-color: var(--slate-white);
+    background-color: var(--slate-white);
     width: 384px;
     height: 522px;
     border-radius: 20px;
     border: 2px solid var(--slate-gray-950);
     padding: 24px;
     box-shadow: 10px 10px;
-}
-
-.card-image {
-    object-fit: fill;
-    max-height: 200px;
 }
 
 .card-content-tag {
