@@ -31,13 +31,18 @@ img {
 }
 
 .card {
-    background-color: var(--slate-white);
+        background-color: var(--slate-white);
     width: 384px;
     height: 522px;
     border-radius: 20px;
     border: 2px solid var(--slate-gray-950);
-    padding: 16px;
+    padding: 24px;
     box-shadow: 10px 10px;
+}
+
+.card-image {
+    object-fit: fill;
+    max-height: 200px;
 }
 
 .card-content-tag {
@@ -59,9 +64,15 @@ img {
 }
 
 .card-content-title {
-    font-size: 28px;
-    font-weight: 800;
+    font-size: 27px;
     margin-top: 12px;
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+}
+
+.card-content-title:hover {
+    color: var(--slate-yellow)
 }
 
 .card-content-desc {
@@ -96,4 +107,48 @@ img {
 
 .attribution {
     text-align: center;
+}
+
+@media (max-width: 375px) and (max-height: 812px) {
+    .card-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .card {
+        max-width: 327px;
+        max-height: 400px;
+        padding: 24px;
+        box-shadow: 8px 8px;
+        border-width: 1px;
+        border-radius: 20px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .card-wrapper {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .card-content-title {
+        font-size: 18px;
+        margin-top: 12px;
+    }
+
+    .card-content-desc {
+        font-size: 14px;
+        line-height: 0.6cm;
+    }
+
+    .card-content-author-wrapper {
+        justify-content: left;
+        align-items: center;
+    }
+
+    .card-content-author-name {
+        font-size: 14px;
+        margin-left: 12px;
+    }
 }
