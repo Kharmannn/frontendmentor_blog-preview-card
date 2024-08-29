@@ -67,7 +67,8 @@ img {
 }
 
 .card-content-title:hover {
-    color: var(--slate-yellow)
+    color: var(--slate-yellow);
+    transition: 0.2s;
 }
 
 .card-content-desc {
